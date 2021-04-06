@@ -12,7 +12,7 @@ if os.path.isfile(REQUIREMENTS_PATH):
 setup(
     name='corellia_preprocessor',
     packages=find_packages(include=['corellia_preprocessor']),
-    version='1.0.0',
+    version='1.0.1',
     description='Corellia data market Preprocessor package',
     author='Boris Vasilev',
     author_email='borisvasilev395@gmail.com',
