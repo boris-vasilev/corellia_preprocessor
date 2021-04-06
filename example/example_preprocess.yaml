@@ -1,0 +1,26 @@
+---
+features:
+  - fixed acidity
+  - volatile acidity
+  - citric acid
+  - residual sugar
+  - chlorides
+  - free sulfur dioxide
+  - total sulfur dioxide
+  - density
+  - pH
+  - sulphates
+  - alcohol
+label: quality
+featureTasks:
+  - name: normalize features
+    operation: normalize
+#   If no columns are specified. Operate on all columns
+#    columns:
+#      - column1
+#      - column2
+    args: # for operation-specific arguments
+      independent: false # same as axis=0 or 1. 1 for independent 0 for dependent
+labelTasks:
+  - name: one-hot encode
+    operation: onehot
